@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hlupico.mememaker.newMemeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a picture..."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="From Gallery"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Take Photo"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Cafe"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/shut_up_and_take_my_money"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Text"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom text"
+            android:textAlignment="center"
+            android:layout_alignBottom="@+id/Cafe"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="save"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+</LinearLayout>
